@@ -1,0 +1,12 @@
+<div class="{{ wrapClass }}">
+  <app-top-bar class="{{ componentContainerClass }}"></app-top-bar>
+  <app-main-content
+    class="{{ componentContainerClass }}"
+    [hiddenCompleted]="hiddenCompleted"
+  ></app-main-content>
+  <app-footer
+    class="{{ componentContainerClass }}"
+    [hiddenCompleted]="hiddenCompleted"
+    (newHiddenCompleted)="addHiddenCompleted($event)"
+  ></app-footer>
+</div>

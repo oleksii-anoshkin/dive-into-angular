@@ -1,0 +1,17 @@
+<nav class="{{ navClass }}">
+  <div class="{{ containerClass }}">
+    <span class="{{ titleClass }}">{{ titleText }}</span>
+    <div class="{{ formClass }}" role="search">
+      <input
+        type="text"
+        class="{{ inputClass }}"
+        placeholder=""
+        value="{{ value }}"
+        (keyup)="checkKey($event)"
+      />
+      <button class="{{ btnClass }}" type="button" (click)="addNewTodo()">
+        {{ btnText }}
+      </button>
+    </div>
+  </div>
+</nav>

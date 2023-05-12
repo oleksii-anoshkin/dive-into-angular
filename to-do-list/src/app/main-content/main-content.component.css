@@ -1,0 +1,10 @@
+.list-group-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-check-label {
+  margin-left: .25em;
+}
