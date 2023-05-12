@@ -1,0 +1,10 @@
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+app-main-content.container {
+  flex: 1 1 auto;
+
+  padding: calc(var(--bs-gutter-x) * .5);
+}

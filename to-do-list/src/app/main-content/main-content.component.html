@@ -1,0 +1,21 @@
+<ul class="{{ todosClass }}">
+  <li class="{{ todoClass }}" *ngFor="let todo of setTodos()">
+    <div>
+      <input
+        class="{{ checkInputClass }}"
+        type="checkbox"
+        id="{{ todo.id }}"
+        checked="{{ setChecked(todo.done) }}"
+        (click)="changeCheck(todo.id)"
+      />
+      <label class="{{ checkInputLabelClass }}" for="{{ todo.id }}">{{
+        todo.text
+      }}</label>
+    </div>
+    <button
+      type="button"
+      class="{{ closeBtnClass }}"
+      (click)="removeTodo(todo)"
+    ></button>
+  </li>
+</ul>
