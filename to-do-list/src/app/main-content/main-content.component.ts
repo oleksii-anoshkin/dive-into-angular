@@ -17,13 +17,18 @@ export class MainContentComponent {
   checkInputClass = "form-check-input me-1";
   checkInputLabelClass = "form-check-label";
   closeBtnClass = "btn-close";
+  todoBoxClass = "input-label-box";
 
   // variables
+  idText = 'todo'
   index?: number;
+  newTodos?: any;
+  newtodos?: any;
   
   // methods
   setTodos() {
-    return this.hiddenCompleted ? Todos.filter((t) => t.done === false) : Todos;
+    this.newTodos = [].concat(Todos.filter((t) => t.done === false), Todos.filter((t) => t.done === true));
+    return this.hiddenCompleted ? this.newTodos.filter((t) => t.done === false) : this.newTodos;
   }
 
   setChecked(done: boolean) {

@@ -2,9 +2,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.input-label-box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-check-input {
+  flex: 0 0 16px;
 }
 
 .form-check-label {
+  flex: 1 1 auto;
   margin-left: .25em;
+}
+
+.btn-close {
+  min-width: 32px
 }
