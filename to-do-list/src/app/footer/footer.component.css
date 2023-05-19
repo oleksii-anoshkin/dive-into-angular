@@ -1,3 +1,7 @@
 .container-fluid {
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.d-flex {
+  margin-bottom: 0;
 }

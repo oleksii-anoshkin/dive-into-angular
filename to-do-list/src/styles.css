@@ -6,3 +6,7 @@
 
   height: 100vh;
 }
+
+.wrap>.container-fluid {
+  max-width: 768px;
+}

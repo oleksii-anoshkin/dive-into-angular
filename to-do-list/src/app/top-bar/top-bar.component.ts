@@ -11,14 +11,14 @@ export class TopBarComponent {
   // classes
   navClass = "navbar bg-body-tertiary";
   containerClass = "container-fluid";
-  titleClass = "navbar-brand mb-0 h1";
+  titleClass = "navbar-brand h1";
   formClass = "d-flex";
   inputClass = "form-control me-2";
   btnClass = "btn btn-secondary";
 
   // texts
   titleText = "TODO List";
-  btnText = "Add Todo";
+  btnText = "Add";
   idText = 'todo'
 
   // variables
